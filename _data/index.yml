@@ -1,0 +1,64 @@
+# Slides Configs
+slides:
+- name: Pedidos de Certidão Online
+  imageUrl: images/slide-1.jpg
+  description: >-
+    PEDIDOS DE CERTIDÃO SOMENTE PELO SITE REGISTRADORES
+    DEVIDO AS NORMAS DE SAUDE SOBRE O COVID - 19 OS SERVIÇOS DEVERÃO SER FEITOS PREFERENCIALMENTE PELO SITE.
+  link: https://www.registradores.org.br
+  buttonText: Acesse
+
+# Services Configs
+# Icon List: http://cms.devoffice.com/repack/packs/fl-fill-round-icons/
+services:
+- name: Certidão Eletrônica
+  description: >- 
+    
+  icon: fl-fill-round-icons-attachment12
+  link: https://www.registradores.org.br/
+
+- name: Matrícula Eletrônica
+  description: >- 
+    
+  icon: fl-fill-round-icons-attachment12
+  link: https://www.registradores.org.br/VisualizarMatricula/DefaultVM.aspx
+
+- name: Andamento Registral
+  description: >- 
+    
+  icon: fl-fill-round-icons-folder162
+  link: https://www.1rimaringa.com.br/andamento-registral/
+
+- name: e-Protocolo
+  description: >- 
+    
+  icon: fl-fill-round-icons-arroba13
+  link: https://www.registradores.org.br/eProtocolo/DefaultAC.aspx
+
+- name: Validador
+  description: >- 
+    
+  icon: fl-fill-round-icons-verification14
+  link: https://www.funarpen.com.br/consulta_selo_digital/
+
+- name: Portal da Transparência
+  description: >- 
+    
+  icon: fl-fill-round-icons-visible5
+  link: https://www.cnj.jus.br/corregedoria/justica_aberta/
+
+- name: Manual dos Serviços
+  description: >-
+    Precisa de ajuda? O Registradores.org.br possui manual para todos os serviços. Clique e confira!
+  icon: fl-fill-round-icons-lifeguard3
+  link: https://www.registradores.org.br/Servicos/frmTutorial.aspx
+
+# Youtube Section Config
+
+youtube:
+  name: Aprenda a tirar certidões online
+  videoCode: af0G-sY1aXE
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+  link: https://www.registradores.org.br/Servicos/frmTutorial.aspx

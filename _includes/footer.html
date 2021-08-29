@@ -1,0 +1,61 @@
+<!-- Page Footer-->
+<footer class="page-footer" id="footer">
+    <div class="container">
+        <div class="row row-40 justify-content-md-around justify-content-xl-start text-md-left">
+            <div class="col-xl-4 col-xxl-3 col-lg-5 col-md-7">
+                <a href="{{site.baseurl}}">
+                    <img class="brand-footer" src="images/logo-inverse-398x97.png" alt="" width="199" height="48"/><br>
+                </a>
+                <p></p>
+                <p class="text-gray-lighter">
+                    {{site.description}}
+                </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xxl-3">
+                <h5>Menu</h5>
+                <ul class="list">
+                    {% for link in site.data.navigation.links %}
+                    <li><a href="{{ site.baseurl }}{{ link.link }}">{{ link.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-5 col-lg-4 col-xl-3">
+                <h5>Contato</h5>
+                <address>
+                    <p>
+                        Rua Washington Luiz, 1156, Salas 114 e 115<br>
+                        Centro Comercial Marialva<br>
+                        Centro - CEP 86990-000
+                    </p>
+                    <a href="mailto:{{site.email}}">{{site.email}}</a>
+                    {% include social.html %}
+                </address>
+            </div>
+            <div class="col-md-5 col-xl-3 col-xxl-3 col-lg-3">
+                <h5>Horário de Atendimento</h5>
+                <div class="list-terms-footer">
+                    <dl>
+                        <dt>Manhã:</dt>
+                        <dd>08:30 - 11:00</dd>
+                    </dl>
+                    <dl>
+                        <dt>Tarde:</dt>
+                        <dd>13:00 - 17:00</dd>
+                    </dl>
+                    <dl>
+                        <dt>de</dt>
+                        <dd>Segunda a Sexta</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center offset-top-55">
+            <div class="col-lg-12">
+                <p class="copyright">
+                    <span class="copyright-year"></span> 
+                    | {{site.title}} &#169; Todos os Direitos Reservados
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

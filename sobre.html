@@ -1,0 +1,93 @@
+---
+title: Sobre
+layout: default
+---
+<section class="section-50 section-sm-70 section-md-80 section-lg-115 bg-transparent">
+    <div class="container">
+        <h4>
+            Proprietária de extensa gleba de terras adquiridas do Governo do Estado do Paraná, no trecho histórico Caminho de Peabiru, a Companhia de Terras Norte do Paraná, promoveu a criação de um patrimônio, ao lado da estrada que liga Mandaguari a Maringá, a que se deu a denominação de Marialva.
+            Para seu desenvolvimento, atraiu pessoas de todas as Unidades da Federação, com o objetivo de se dedicarem, principalmente, à cultura do café, para a qual as terras roxas e o clima subtropical se prestavam admiravelmente.A venda de lotes urbanos foi coroada de exito e em pouco tempo dava amostra de uma nova cidade.
+        </h4>
+        <p class="offset-top-30">
+            Em 1947, o Patrimônio era elevado à categoria de Distrito Administrativo, no Município de Mandaguari e, em 1951, foi criado o Município de Marialva. O nome do município foi dado em homenagem a D. Pedro de Alcântara Menezes, o “Marquês de Marialva”, destro cavaleiro português, nascido em 1711 e falecido em 1799.
+        </p>
+        <p class="offset-top-30">   
+            Distrito criado com a denominação de Marialva, pela lei estadual n.º 2, de 10-10­1947, subordinado ao município de Mandaguari. Em divisão territorial datada de 1-VII-1950, o distrito de Marialva figura no município de Mandaguari.
+        </p>
+        <p class="offset-top-30">
+            Elevado à categoria de município com a denominação de Marialva, pela lei estadual n.º 790, de 14-11-1951, desmembrado de Mandaguari. Sede no distrito de Marialva (ex­povoado). Constituído de 2 distritos: Marialva e Itambé. Instalado em 14-12-1952. Pela lei municipal n.º 53, de 21-12-1954, é criado o distrito de Sarandi (ex-povoado) e anexado ao município de Marialva.
+        </p>
+        <p class="offset-top-30">
+            Em divisão territorial datada de 1-VII-1960, o município é constituído de 3 distritos: Marialva, Itambé e Sarandi. Pela lei estadual n.º 4245, de 25-07-1960, desmembra do município de Marialva, Bom Sucesso e São Pedro do Ivaí, o distrito de Itambé. Elevado à categoria de município.
+        </p>
+        <p class="offset-top-30">
+            Pela lei municipal n.º 245, de 27-09-1961, é criado o distrito de Cambuí e anexado ao município de Marialva. Pela lei estadual n.º 5582, de 03-07-1967, o distrito de Cambuí passou a denominar­se São Miguel de Cambuí.
+            Pela lei municipal n.º 525, de 24-08-1967, é criado o distrito de São Luiz e anexado ao município de Marialva. Pela lei estadual n.º 5758, de 10-04-1968, é criado o distrito de Santa Fé do Pirapó e anexado ao município de Marialva.
+        </p>
+        <p class="offset-top-30">
+            Em divisão territorial datada de 1-I-1979, o município é constituído de 5 distritos: Marialva, Santa Fé do Pirapó, São Miguel de Cambuí, Sarandi e São Luiz. Pela lei estadual n.º 7502, de 14-10-1981, desmembra do município de Marialva o distrito de Sarandi. Elevado à categoria de município. 
+        </p>
+        <p class="offset-top-30">
+            Em divisão territorial datada de 1-VII-1983, o município é constituído de 4 distritos: Marialva, Santa Fé do Pirapó, São Luiz e São Miguel do Cambuí. Em divisão territorial datada de 1-VI-1995, o município é constituído de 4 distritos: Marialva, Santa Fé do Pirapó, São Luiz e São Miguel do Cambuí.
+        </p>
+        <p class="offset-top-30">
+            Temos orgulho de acompanhar a capital da uva desde de 1954 com esmero e confiabilidade, nosso antecessor Oficial registrador Abílio Nagib Neme inclusive teve seu nome posto no monumento de entrada de nossa cidade o “Parreiral Abílio Nagib Neme”
+        </p>
+        <div class="row row-30">
+            <div class="col-md-6">
+                <h6>Principios:</h6>
+                <ul class="list text-primary list-lg offset-top-20 list-marked-line text-left offset-md-top-30">
+                    <li><strong>Missão:</strong> Garantir e proteger a sua propriedade.</li>
+                    <li><strong>Visão:</strong> Contribuir para a paz social e o desenvolvimento econômico impactando as partes interessadas por meio da nossa cultura institucional.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h6>Valores:</h6>
+                <ul class="list text-primary list-lg offset-top-20 list-marked-line text-left offset-md-top-30">
+                    <li>Dedicação</li>
+                    <li>Confiança</li>
+                    <li>Excelência palpável</li>
+                    <li>Inovação permanente</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-50 section-sm-70 section-md-90 section-lg-115 bg-transparent">
+    <div class="container">
+        <h3 class="text-center">FAQ</h3>
+        <h2 class="text-center">Dúvidas frequentes</h2>
+        <div 
+            class="card-group-custom card-group-default offset-top-40 offset-md-top-50 offset-xl-top-70"
+            id="accordion2" 
+            role="tablist" 
+            aria-multiselectable="false">
+
+            {% for faq in site.data.about.faq %}
+            <article class="card card-custom card-default card-default-arrow">
+                <div class="card-header" id="accordion2Heading{{faq.id}}" role="tab">
+                    <div class="card-title">
+                        <a role="button" 
+                            data-toggle="collapse" 
+                            data-parent="#accordion2"
+                            href="#accordion2Collapse{{faq.id}}" 
+                            aria-controls="accordion2Collapse{{faq.id}}" 
+                            aria-expanded="true">
+                            Q: {{faq.question}}
+                            <div class="card-arrow"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse" id="accordion2Collapse{{faq.id}}" role="tabpanel"
+                    aria-labelledby="accordion2Heading{{faq.id}}">
+                    <div class="card-body"><span class="text-primary">A:</span>
+                        {{faq.answer}}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

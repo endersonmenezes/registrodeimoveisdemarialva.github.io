@@ -1,0 +1,56 @@
+<!-- Page Header-->
+<header class="page-head">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap">
+        <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+            data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="261px">
+            <div class="rd-navbar-inner rd-navbar-inner-top">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                    <!-- RD Navbar Toggle-->
+                    <button class="rd-navbar-toggle"
+                        data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                    <button class="rd-navbar-collapse-toggle"
+                        data-rd-navbar-toggle=".rd-navbar-panel-aside"><span></span></button>
+                    <!-- RD Navbar Brand-->
+                    <div class="rd-navbar-brand"><a class="brand-name" href="index.html">Advoza</a></div>
+                    <div class="rd-navbar-call">
+                        <span class="icon icon-sm icon-rounded material-icons-local_phone icon-primary"></span>
+                        <a href="tel:+553332321374">(44) 3232-1374</a>
+                    </div>
+                </div>
+                <div class="rd-navbar-panel-aside">
+                    {% include social.html %}                
+                </div>
+            </div>
+            <div class="rd-navbar-inner rd-navbar-inner-bottom"><a class="brand-name" href="index.html"><img
+                        src="images/logo-default-398x97.png" alt="" width="199" height="48" /></a>
+                <div class="rd-navbar-nav-wrap">
+                    <ul class="navbar-navigation rd-navbar-nav">
+                        {% for link in site.data.navigation.links %}
+                        {% assign class = "navbar-navigation-root-item" %}
+
+                        {% if link.link == page.url %}
+                            {% assign class = class | append: " active" %}
+                        {% endif %}
+                        <li class="{{class}}">
+                            <a class="navbar-navigation-root-link" href="{{ site.baseurl }}{{link.link}}">{{link.name}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!--RD Navbar Collapse-->
+                <div class="rd-navbar-collapse">
+                    <div class="rd-navbar-collapse-items">
+                        <span class="icon material-design-write20 icon-xs-big icon-primary"></span>
+                        <a href="mailto:{{site.email}}">{{site.email}}</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,16 @@
+title: Cartório de Registro de Imóveis de Marialva
+email: crimarialva@gmail.com
+description: >-
+  Temos orgulho de acompanhar a capital da uva fina desde de 1954 com esmero e confiabilidade, 
+  nosso antecessor Oficial registrador Abílio Nagib Neme inclusive teve seu nome posto no 
+  monumento de entrada de nossa cidade o “Parreiral Abílio Nagib Neme”.
+baseurl: ""
+url: "https://registrodeimoveismarialva.com.br/"
+plugins:
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE

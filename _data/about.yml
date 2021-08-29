@@ -1,0 +1,18 @@
+team:
+  - name: "José"
+    description: "José é um desenvolvedor de software"
+    image: "images/sobre.jpg"
+
+  - name: "Maria"
+    description: "Maria é uma desenvolvedora de software"
+    image: "images/sobre.jpg"
+
+faq:
+  - id: 1
+    question: "Vocês autenticam documento? Reconhecem firmas? Fazem procuração ou escritura?"
+    answer: >- 
+      "Não. Isso tudo é feito apenas em Tabelionatos de Notas."
+  - id: 2
+    question: "Qual é o prazo para a entrega da certidão solicitada?"
+    answer: >-
+      "O prazo máximo determinado pela lei é de cinco dias."
