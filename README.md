@@ -7,5 +7,6 @@
 ### Developer
 
 ```bash
-jekyll serve
+bundle install
+bundle exec jekyll serve
 ```
