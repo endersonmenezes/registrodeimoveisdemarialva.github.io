@@ -5,5 +5,7 @@ links:
   link: /sobre.html
 - name: Emolumentos
   link: /emolumentos.html
+- name: Transparência
+  link: https://extrajudicial.tjpr.jus.br/informacoes-das-unidades-extrajudiciais
 - name: Contato
   link: /#footer
